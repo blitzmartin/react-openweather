@@ -101,7 +101,45 @@ td {
   padding: 1rem 2.3rem;
 }
 
+@media screen and (min-width: 600px) and (max-width: 900px){
+  .App {
+    padding: 1rem;
+    margin: 0;
+  }
+  
+  .header {
+    text-align: center;
+  }
+
+  .logo {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 600px) {
+
+  .App {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+  }
+
+  .header {
+    text-align: center;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .inputDiv {
+    flex-direction: column;
+    padding: 0.5rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
   table {
     width: 100%;
   }
