@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Aleo:wght@400;700&family=Playfair+Display:wght@400;700&family=Sarabun:wght@100;200;300;400&display=swap');
+
+:root {
+  --font-primary: 'Sarabun', sans-serif;
+  --font-accent: 'Aleo', serif;
+  --col-light: whitesmoke;
+  --col-dark: #272C33;
+  --col-primary: #071330;
+  --col-accent: #FF2511;
+}
+
+.App {
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: var(--font-primary);
+  color: var(--col-dark);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--col-accent);
+  font-family: var(--font-accent);
+}
+
+h1 {
+  font-size: 3.4rem
+}
+
+h2 {
+  font-size: 2rem
+}
+
+h3 {
+  font-size: 1.5rem
+}
+
+.header {
+  background-color: white;
+  text-align: left;
+  padding: 2rem;
+  width: 100%;
+  margin: 0;
+}
+
+.inputDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputDiv > * {
+  font-size: 1.3rem;
+}
+
+.inputDiv input {
+  margin: 1rem;
+  padding: 0.5rem;
+}
+
+.inputDiv button {
+  margin: 0.5rem;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  background-color: var(--col-accent);
+  border: none;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+}
+
+.inputDiv button:hover {
+  background-color: var(--col-dark);
+  color: var(--col-accent)
+}
+
+table {
+  margin: 2rem auto;
+  padding: 2rem;
+  box-shadow: 0 10px 17px 2px #1b1b1b;
+  background-color: var(--col-light);
+  color: var(--col-dark);
+}
+
+table, th, td {
+  border: 2px solid var(--col-accent);
+  border-collapse: collapse;
+}
+
+th {
+  padding: 1.5rem 2.3rem;
+  background-color: var(--col-accent);
+  color: white;
+}
+
+td {
+  padding: 1rem 2.3rem;
+}
