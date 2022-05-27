@@ -50,7 +50,7 @@ h3 {
   align-items: center;
 }
 
-.inputDiv > * {
+.inputDiv>* {
   font-size: 1.3rem;
 }
 
@@ -84,7 +84,9 @@ table {
   color: var(--col-dark);
 }
 
-table, th, td {
+table,
+th,
+td {
   border: 2px solid var(--col-accent);
   border-collapse: collapse;
 }
@@ -100,19 +102,38 @@ td {
 }
 
 @media screen and (max-width: 600px) {
-  table {width:100%;}
-  thead {display: none;}
-  tr:nth-of-type(2n) {background-color: inherit;}
-  tr td:first-child {/*background: #f0f0f0;*/ font-weight:normal;font-size:1.3em;}
-  tbody td {display: block;  text-align:left;}
-  tbody td:before { 
-      content: attr(data-th); 
-      display: block;
-      text-align:left;  
+  table {
+    width: 100%;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tr:nth-of-type(2n) {
+    background-color: inherit;
+  }
+
+  tr td:first-child {
+    /*background: #f0f0f0;*/
     font-weight: normal;
-    }
-    tbody td::before {
+    font-size: 1.3em;
+  }
+
+  tbody td {
+    display: block;
+    text-align: left;
+  }
+
+  tbody td:before {
+    content: attr(data-th);
+    display: block;
+    text-align: left;
+    font-weight: normal;
+  }
+
+  tbody td::before {
     content: attr(data-th);
     display: none;
   }
-  }
+}
